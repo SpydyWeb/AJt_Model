@@ -194,6 +194,8 @@ namespace Models
             public decimal VATAmount { get; set; }
             public DateTime? CreatedOn { get; set; }
             public DateTime PolicyStartDate { get; set; }
+            public string BankNameEn { set; get; }
+            public string BankNameAr { set; get; }
         }
         public class DomesitcQuotationDetail
         {
