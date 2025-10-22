@@ -475,6 +475,11 @@ namespace Models
             public string paymentMethod { get; set; }
 
         }
+        public class PolicyBankPaymentInput
+        {
+            public string Key { get; set; }
+            public string ReferenceNo { get; set; }
+        }
         public class FinalSaveRequest
         {
             public int policyId { get; set; }
@@ -521,5 +526,13 @@ namespace Models
             public object Data { get; set; }
             public string Message { get; set; }
         }
+        public class PaymentBankBody
+        {
+            public string amount { get; set; }
+            public string order_description { get; set; }
+            public string merchant_reference { get; set; }
+            public string token_name { get; set; }
+        }
+
     }
 }
