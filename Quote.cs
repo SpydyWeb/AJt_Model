@@ -938,7 +938,7 @@ namespace Models
         public DateTime TransactionDate { get; set; }
         public decimal Premium { get; set; }
         public string MerchantReference { get; set; }
-      
+
     }
     public class RecurringTransactionsDetail
     {
@@ -1038,10 +1038,94 @@ namespace Models
     }
     public class PolicyListReq
     {
-        public int PageNumber { get; set; } 
-        public int PageSize { get; set; } 
-        public string Search { get; set; } 
-        public string Lang { get; set; } 
+        public int PageNumber { get; set; }
+        public int PageSize { get; set; }
+        public string Search { get; set; }
+        public string Lang { get; set; }
+    }
+    public class PscColPolicyDetails
+    {
+        public string VPolicyNo { get; set; }
+        public string CustName { get; set; }
+        public string VArabicName { get; set; }
+        public string OwnerName { get; set; }
+        public DateTime? DPremDueDate { get; set; }
+        public string IndCovered { get; set; }
+        public int? NAgentNo { get; set; }
+        public string AgentName { get; set; }
+        public string ArabicAgentName { get; set; }
+        public string VPlanCode { get; set; }
+        public DateTime? DCommencement { get; set; }
+        public DateTime? DIssue { get; set; }
+        public DateTime? DDispatchDate { get; set; }
+        public DateTime? DAcknowledge { get; set; }
+        public string VIdenCode { get; set; }
+        public string VIdenNo { get; set; }
+        public string IdExpiryDate { get; set; }
+        public string VPostBox { get; set; }
+        public string VPostcode { get; set; }
+        public string VTown { get; set; }
+        public DateTime? PaidToDate { get; set; }
+        public string Curr { get; set; }
+        public string Freq { get; set; }
+        public decimal? Amount { get; set; }
+        public string Escalating { get; set; }
+        public string VStatusDesc { get; set; }
+        public DateTime? StatusDate { get; set; }
+        public string VAgencyRegion { get; set; }
+        public string VBranchCode { get; set; }
+        public decimal? NSumCovered { get; set; }
+        public DateTime? DateCanc { get; set; }
+        public decimal? Nav { get; set; }
+        public DateTime? DExpiry { get; set; }
+        public DateTime? DPolicyEndDate { get; set; }
+        public string MTel { get; set; }
+        public string RTel { get; set; }
+        public string OTel { get; set; }
+        public string Email { get; set; }
+        public string AgentStatus { get; set; }
+        public decimal? ContriPaid { get; set; }
+        public int? ContPaidCnt { get; set; }
+        public int? NoOutstnd { get; set; }
+        public decimal? TotOutstndSar { get; set; }
+        public string VAgentCode { get; set; }
+        public string VSex { get; set; }
+        public int? NTerm { get; set; }
+        public DateTime? DProposerDob { get; set; }
+        public DateTime? DApproveDate { get; set; }
+        public int? NChannelNo { get; set; }
+        public string AgencyRegion { get; set; }
+        public string VIsoNumber { get; set; }
+        public int? TelesalesAgentNo { get; set; }
+        public string VProposalNo { get; set; }
+        public string VPlanName { get; set; }
+        public string VChannel { get; set; }
+        public string VLobDesc { get; set; }
+        public string VMobile { get; set; }
+        public string VProductGroup { get; set; }
+        public string VOccupation { get; set; }
+        public decimal? NAnnualIncome { get; set; }
+        public string VSourceOfIncome { get; set; }
+        public string VPortfolioType { get; set; }
+        public decimal? NPwAmount { get; set; }
+        public DateTime? DRecentDate { get; set; }
+        public int? NInvestCount { get; set; }
+        public int? NPrevPw { get; set; }
+        public decimal? NFwAmount { get; set; }
+        public string VPymtDesc { get; set; }
+        public string VCurrencyDesc { get; set; }
+        public DateTime? DLastPaid { get; set; }
+        public string VPayMethod { get; set; }
+        public decimal? NTopup { get; set; }
+        public DateTime? DNextOutDate { get; set; }
+        public DateTime? DAlteration { get; set; }
+        public string VAlterationDesc { get; set; }
+        public string VAltStatus { get; set; }
+        public int? NPendingCount { get; set; }
+        public string VNotes { get; set; }
+        public DateTime? DCommunication { get; set; }
+        public int? RmAgentNo { get; set; }
+        public decimal? NProfitRatio { get; set; }
     }
 
 }
