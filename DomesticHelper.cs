@@ -535,6 +535,23 @@ namespace Models
             public string merchant_reference { get; set; }
             public string token_name { get; set; }
         }
-
+        public class PayfortPaymentStatusResponse
+        {
+            public string transactionStatus { get; set; }
+            public string transaction_code { get; set; }
+            public string transaction_status { get; set; }
+            public string response_code { get; set; }
+            public string signature { get; set; }
+            public string transaction_message { get; set; }
+            public string language { get; set; }
+            public string fort_id { get; set; }
+            public string refunded_amount { get; set; }
+            public string response_message { get; set; }
+            public string merchant_reference { get; set; }
+            public string query_command { get; set; }
+            public string captured_amount { get; set; }
+            public string authorized_amount { get; set; }
+            public string status { get; set; }
+        }
     }
 }
