@@ -1126,6 +1126,18 @@ namespace Models
         public DateTime? DCommunication { get; set; }
         public int? RmAgentNo { get; set; }
         public decimal? NProfitRatio { get; set; }
+        public string PaymentKey { get; set; }
+        public DateTime? Createddate { get; set; }
     }
+    //changes start made by ankita on 24-10-2025
+    public class RecuringResoponse
+    {
+        public string Paymentkey { get; set; }
+    }
+    public class GetPolicyDetailsByPaymentKey 
+    {
+        public string Paymentkey { get; set; }
+    }
+    //changes end made by ankita on 24-10-2025
 
 }
