@@ -1138,6 +1138,26 @@ namespace Models
     {
         public string Paymentkey { get; set; }
     }
-    //changes end made by ankita on 24-10-2025
+    public class RetentialApiLogIds
+    {
+        public List<int> N_LOG_ID { get; set; }
+    }
 
+    //changes end made by ankita on 24-10-2025
+    public class RetentialApiLogResponse
+    {
+        public List<RetentialApiLogItem> Items { get; set; }
+    }
+
+    public class RetentialApiLogItem
+    {
+        public int N_Log_Id { get; set; }
+        public DateTime D_Log_Date { get; set; }
+        public string V_Api_Id { get; set; }
+        public string V_Api_Request { get; set; }
+        public string V_Api_Response { get; set; }
+        public DateTime D_Response { get; set; }
+        public string V_Status { get; set; }
+        public string V_Created_By { get; set; }
+    }
 }
