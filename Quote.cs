@@ -1128,6 +1128,9 @@ namespace Models
         public decimal? NProfitRatio { get; set; }
         public string PaymentKey { get; set; }
         public DateTime? Createddate { get; set; }
+        public string EmailBody { get; set; }
+        public string SMSContent { get; set; }
+        public string EmailSubject { get; set; }
     }
     //changes start made by ankita on 24-10-2025
     public class RecuringResoponse
@@ -1156,7 +1159,7 @@ namespace Models
         public string V_Api_Id { get; set; }
         public string V_Api_Request { get; set; }
         public string V_Api_Response { get; set; }
-        public DateTime D_Response { get; set; }
+        public DateTime? D_Response { get; set; }
         public string V_Status { get; set; }
         public string V_Created_By { get; set; }
     }
