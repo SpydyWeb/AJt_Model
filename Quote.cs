@@ -56,6 +56,7 @@ namespace Models
     }
     public class PersonalInfoUW
     {
+      
         public string QuoteNo { get; set; }
 
         public Int64 PersonalInfoId { get; set; }
@@ -96,6 +97,11 @@ namespace Models
 
         public string ApplicantID { get; set; }
         public string BenificariesID { get; set; }
+
+        public string POLICYNUMBER { get; set; } //Added by Shyam Patil 29Nov2025
+        public string IllustrationFilename { get; set; } //Added by Shyam Patil 29Nov2025
+        public string PurposalFilename { get; set; } //Added by Shyam Patil 29Nov2025
+        public string PaymentKey { get; set; } //Added by Shyam Patil 29Nov2025
 
     }
     public class ContactDetails
@@ -1162,5 +1168,10 @@ namespace Models
         public DateTime? D_Response { get; set; }
         public string V_Status { get; set; }
         public string V_Created_By { get; set; }
+    }
+    //Added by Shyam Patil 29Oct2025
+    public class GetQuote
+    {
+        public string QuoteNo { get; set; }
     }
 }
