@@ -40,7 +40,7 @@ namespace Models
 
         public string FamilyName { get; set; }
 
-        public DateTime DateofBirth { get; set; }
+        public string DateofBirth { get; set; }
 
         public string DateofBirthH { get; set; }
 
