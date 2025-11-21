@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Net;
 using System.Reflection;
+using System.Text.Json.Serialization;
 using static Models.TravelQuote;
 
 namespace Models
@@ -56,7 +57,7 @@ namespace Models
     }
     public class PersonalInfoUW
     {
-      
+
         public string QuoteNo { get; set; }
 
         public Int64 PersonalInfoId { get; set; }
@@ -1116,7 +1117,7 @@ namespace Models
         public decimal? NPwAmount { get; set; }
         public DateTime? DRecentDate { get; set; }
         public int? NInvestCount { get; set; }
-        public int? NPrevPw { get; set; }
+        public decimal? NPrevPw { get; set; }
         public decimal? NFwAmount { get; set; }
         public string VPymtDesc { get; set; }
         public string VCurrencyDesc { get; set; }
@@ -1143,7 +1144,7 @@ namespace Models
     {
         public string Paymentkey { get; set; }
     }
-    public class GetPolicyDetailsByPaymentKey 
+    public class GetPolicyDetailsByPaymentKey
     {
         public string Paymentkey { get; set; }
     }
@@ -1174,4 +1175,101 @@ namespace Models
     {
         public string QuoteNo { get; set; }
     }
+
+    public class UnifiedIssueRootRequest
+    {
+        public UnifiedIssueInputValues InputValues { get; set; }
+    }
+
+    public class UnifiedIssueInputValues
+    {
+        public string ProcedureName { get; set; }
+        public string ServiceType { get; set; }
+        public string RequestRefNo { get; set; }
+        public string SubmissionChannel { get; set; }
+        public string ChannelUser { get; set; }
+        public string CustomerConsent { get; set; }
+        public ReceiptDetails ReceiptDetails { get; set; }
+        public PayerDetails PayerDetails { get; set; }
+        public List<object> AdditionalValues { get; set; }
+    }
+
+    public class ReceiptDetails
+    {
+        public string PolicyNo { get; set; }
+        public string DebitNoteNo { get; set; }
+        public string ReceiptDate { get; set; }
+        public string Currency { get; set; }
+        public decimal TotalAmount { get; set; }
+        public string ReceiptType { get; set; }
+        public string PaymentReceivedThrough { get; set; }
+        public string ReceiptInstrument { get; set; }
+        public string PaymentReferenceNo { get; set; }
+        public string PaymentCardNo { get; set; }
+        public string PaymentConfirmationDate { get; set; }
+        public int RecurringBillingDay { get; set; }
+    }
+
+    public class PayerDetails
+    {
+        public string PayerType { get; set; }
+        public string PayerName { get; set; }
+        public string NationalId { get; set; }
+        public string Email { get; set; }
+        public string MobileNo { get; set; }
+        public string RelationshipWithLifeAssured { get; set; }
+    }
+    public class UnifiedIssueApiResponse
+    {
+        public string status { get; set; }
+
+        public string message { get; set; }
+
+        public int errorCode { get; set; }
+
+        public string errorMessage { get; set; }
+
+        public UnifiedReturnValueContainer returnValue { get; set; }
+
+        public object returnValues { get; set; }
+    }
+
+    public class UnifiedReturnValueContainer
+    {
+        public UnifiedLifeApiResponse LifeApiResponse { get; set; }
+    }
+
+    public class UnifiedLifeApiResponse
+    {
+        public string SubmissionStatus { get; set; }
+        public string ServiceType { get; set; }
+
+        public List<UnifiedApiException> Exceptions { get; set; }
+
+        public string RequestRefNo { get; set; }
+
+        public int SubmissionReqNo { get; set; }
+    }
+
+    public class UnifiedApiException
+    {
+        public string ExceptionMessage { get; set; }
+        public string ExceptionAction { get; set; }
+
+        public string ExceptionCode { get; set; }
+    }
+    public class UnifiedAuthRequest
+    {
+        public string Username { get; set; }
+        public string Password { get; set; }
+    }
+    public class UnifiedAuthResponse
+    {
+        public string status { get; set; }
+        public string access_token { get; set; }
+        public string refresh_token { get; set; }
+        public string message { get; set; }
+    }
+
+
 }
