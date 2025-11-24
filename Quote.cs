@@ -1236,19 +1236,20 @@ namespace Models
 
     public class UnifiedReturnValueContainer
     {
-        public UnifiedLifeApiResponse LifeApiResponse { get; set; }
+        public UnifiedReturnValues InputValues { get; set; }
     }
 
-    public class UnifiedLifeApiResponse
+    public class UnifiedReturnValues
     {
-        public string SubmissionStatus { get; set; }
+        public List<object> AdditionalValues { get; set; }
+        public string SubmissionChannel { get; set; }
+        public string CustomerConsent { get; set; }
+        public PayerDetails PayerDetails { get; set; }
+        public string ProcedureName { get; set; }
         public string ServiceType { get; set; }
-
-        public List<UnifiedApiException> Exceptions { get; set; }
-
+        public ReceiptDetails ReceiptDetails { get; set; }
         public string RequestRefNo { get; set; }
-
-        public int SubmissionReqNo { get; set; }
+        public string ChannelUser { get; set; }
     }
 
     public class UnifiedApiException
@@ -1260,8 +1261,8 @@ namespace Models
     }
     public class UnifiedAuthRequest
     {
-        public string Username { get; set; }
-        public string Password { get; set; }
+        public string username { get; set; }
+        public string password { get; set; }
     }
     public class UnifiedAuthResponse
     {
