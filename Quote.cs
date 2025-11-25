@@ -41,7 +41,7 @@ namespace Models
 
         public string FamilyName { get; set; }
 
-        public string DateofBirth { get; set; }
+        public DateTime DateofBirth { get; set; }
 
         public string DateofBirthH { get; set; }
 
@@ -1138,6 +1138,7 @@ namespace Models
         public string EmailBody { get; set; }
         public string SMSContent { get; set; }
         public string EmailSubject { get; set; }
+        public bool isPaid { get; set; }
     }
     //changes start made by ankita on 24-10-2025
     public class RecuringResoponse
