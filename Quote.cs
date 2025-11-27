@@ -945,7 +945,7 @@ namespace Models
         public DateTime TransactionDate { get; set; }
         public decimal Premium { get; set; }
         public string MerchantReference { get; set; }
-
+        public string Reason { get; set; }
     }
     public class RecurringTransactionsDetail
     {
