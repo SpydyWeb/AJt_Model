@@ -1139,6 +1139,8 @@ namespace Models
         public string SMSContent { get; set; }
         public string EmailSubject { get; set; }
         public bool isPaid { get; set; }
+        public decimal CollectionAmout { get; set; }
+        public int NoOfRecurringDues { get; set; }
     }
     //changes start made by ankita on 24-10-2025
     public class RecuringResoponse
@@ -1179,12 +1181,12 @@ namespace Models
 
     public class UnifiedIssueRootRequest
     {
-        public UnifiedIssueInputValues InputValues { get; set; }
+        public UnifiedIssueInputValues inputValues { get; set; }
     }
 
     public class UnifiedIssueInputValues
     {
-        public string ProcedureName { get; set; }
+        public string procedureName { get; set; }
         public string ServiceType { get; set; }
         public string RequestRefNo { get; set; }
         public string SubmissionChannel { get; set; }
@@ -1230,7 +1232,7 @@ namespace Models
 
         public string errorMessage { get; set; }
 
-        public UnifiedReturnValueContainer returnValue { get; set; }
+        public UnifiedReturnValues returnValue { get; set; }
 
         public object returnValues { get; set; }
     }
@@ -1242,6 +1244,7 @@ namespace Models
 
     public class UnifiedReturnValues
     {
+        public UnifiedLifeApiResponse LifeApiResponse { get; set; }
         public List<object> AdditionalValues { get; set; }
         public string SubmissionChannel { get; set; }
         public string CustomerConsent { get; set; }
@@ -1251,6 +1254,16 @@ namespace Models
         public ReceiptDetails ReceiptDetails { get; set; }
         public string RequestRefNo { get; set; }
         public string ChannelUser { get; set; }
+        
+    }
+    public class UnifiedLifeApiResponse
+    {
+        public string SubmissionStatus { get; set; }
+        public string ServiceType { get; set; }
+        public List<object> Exceptions { get; set; }
+        public string SystemReceiptNo { get; set; }
+        public string RequestRefNo { get; set; }
+        public int SubmissionReqNo { get; set; }
     }
 
     public class UnifiedApiException
