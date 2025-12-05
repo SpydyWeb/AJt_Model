@@ -1141,6 +1141,7 @@ namespace Models
         public bool isPaid { get; set; }
         public decimal CollectionAmout { get; set; }
         public int NoOfRecurringDues { get; set; }
+        public int commId { get; set; }
     }
     //changes start made by ankita on 24-10-2025
     public class RecuringResoponse
@@ -1254,7 +1255,7 @@ namespace Models
         public ReceiptDetails ReceiptDetails { get; set; }
         public string RequestRefNo { get; set; }
         public string ChannelUser { get; set; }
-        
+
     }
     public class UnifiedLifeApiResponse
     {
@@ -1285,6 +1286,10 @@ namespace Models
         public string refresh_token { get; set; }
         public string message { get; set; }
     }
-
+    public class UnifiedRentaionAPIStatus
+    {
+        public string procedure { get; set; }
+        public object requestPayload { get; set; }
+    }
 
 }
