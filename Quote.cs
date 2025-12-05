@@ -1291,5 +1291,20 @@ namespace Models
         public string procedure { get; set; }
         public object requestPayload { get; set; }
     }
+    public class CustomerInvestRLDRequest
+    {
+        public string Email { get; set; }
+        public string MobileNumber { get; set; }
+        public string PolicyNumber { get; set; }
+        public string IDNumber { get; set; }
+        public string FullName { get; set; }
+        public string TotalInvestmentAmount { get; set; }
+        public string TypeOfPlan { get; set; }
+        public string PolicyTerm { get; set; }
+        public string Frequency { get; set; }
+        public string SumCovered { get; set; }
+        public string AmountToBeTransferred { get; set; }
+        public string SystemDate { get; set; }
+    }
 
 }
