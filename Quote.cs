@@ -41,7 +41,7 @@ namespace Models
 
         public string FamilyName { get; set; }
 
-        public string DateofBirth { get; set; }
+        public DateTime DateofBirth { get; set; }
 
         public string DateofBirthH { get; set; }
 
@@ -945,7 +945,7 @@ namespace Models
         public DateTime TransactionDate { get; set; }
         public decimal Premium { get; set; }
         public string MerchantReference { get; set; }
-
+        public string Reason { get; set; }
     }
     public class RecurringTransactionsDetail
     {
@@ -1138,6 +1138,10 @@ namespace Models
         public string EmailBody { get; set; }
         public string SMSContent { get; set; }
         public string EmailSubject { get; set; }
+        public bool isPaid { get; set; }
+        public decimal CollectionAmout { get; set; }
+        public int NoOfRecurringDues { get; set; }
+        public int commId { get; set; }
     }
     //changes start made by ankita on 24-10-2025
     public class RecuringResoponse
@@ -1178,12 +1182,12 @@ namespace Models
 
     public class UnifiedIssueRootRequest
     {
-        public UnifiedIssueInputValues InputValues { get; set; }
+        public UnifiedIssueInputValues inputValues { get; set; }
     }
 
     public class UnifiedIssueInputValues
     {
-        public string ProcedureName { get; set; }
+        public string procedureName { get; set; }
         public string ServiceType { get; set; }
         public string RequestRefNo { get; set; }
         public string SubmissionChannel { get; set; }
@@ -1229,25 +1233,37 @@ namespace Models
 
         public string errorMessage { get; set; }
 
-        public UnifiedReturnValueContainer returnValue { get; set; }
+        public UnifiedReturnValues returnValue { get; set; }
 
         public object returnValues { get; set; }
     }
 
     public class UnifiedReturnValueContainer
     {
-        public UnifiedLifeApiResponse LifeApiResponse { get; set; }
+        public UnifiedReturnValues InputValues { get; set; }
     }
 
+    public class UnifiedReturnValues
+    {
+        public UnifiedLifeApiResponse LifeApiResponse { get; set; }
+        public List<object> AdditionalValues { get; set; }
+        public string SubmissionChannel { get; set; }
+        public string CustomerConsent { get; set; }
+        public PayerDetails PayerDetails { get; set; }
+        public string ProcedureName { get; set; }
+        public string ServiceType { get; set; }
+        public ReceiptDetails ReceiptDetails { get; set; }
+        public string RequestRefNo { get; set; }
+        public string ChannelUser { get; set; }
+
+    }
     public class UnifiedLifeApiResponse
     {
         public string SubmissionStatus { get; set; }
         public string ServiceType { get; set; }
-
-        public List<UnifiedApiException> Exceptions { get; set; }
-
+        public List<object> Exceptions { get; set; }
+        public string SystemReceiptNo { get; set; }
         public string RequestRefNo { get; set; }
-
         public int SubmissionReqNo { get; set; }
     }
 
@@ -1260,8 +1276,8 @@ namespace Models
     }
     public class UnifiedAuthRequest
     {
-        public string Username { get; set; }
-        public string Password { get; set; }
+        public string username { get; set; }
+        public string password { get; set; }
     }
     public class UnifiedAuthResponse
     {
@@ -1270,6 +1286,25 @@ namespace Models
         public string refresh_token { get; set; }
         public string message { get; set; }
     }
-
+    public class UnifiedRentaionAPIStatus
+    {
+        public string procedure { get; set; }
+        public object requestPayload { get; set; }
+    }
+    public class CustomerInvestRLDRequest
+    {
+        public string Email { get; set; }
+        public string MobileNumber { get; set; }
+        public string PolicyNumber { get; set; }
+        public string IDNumber { get; set; }
+        public string FullName { get; set; }
+        public string TotalInvestmentAmount { get; set; }
+        public string TypeOfPlan { get; set; }
+        public string PolicyTerm { get; set; }
+        public string Frequency { get; set; }
+        public string SumCovered { get; set; }
+        public string AmountToBeTransferred { get; set; }
+        public string SystemDate { get; set; }
+    }
 
 }
