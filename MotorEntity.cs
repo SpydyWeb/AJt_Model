@@ -98,6 +98,16 @@ namespace Models
             public int Customer_Id { get; set; }
             public string OFFICE_ADDRESS { get; set; }
 
+            //Changes start made by raju on 26-12-2025
+            public int Braking { get; set;}
+            public int Acceleration { get; set;}
+            public int Cornering { get; set;}
+            public int Adherence_to_speed_limit { get; set;}
+            public int Time_of_the_day { get; set;}
+            public int Mileage { get; set;}
+            public int Seat_belts { get; set;}
+            //Changes end made by raju on 26-12-2025
+
         }
 
     }

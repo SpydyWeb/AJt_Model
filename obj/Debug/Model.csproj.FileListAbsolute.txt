@@ -47,3 +47,15 @@ D:\SalesPortal\UATCODE\MODEL\obj\Debug\Model.csproj.CoreCompileInputs.cache
 D:\SalesPortal\UATCODE\MODEL\obj\Debug\Model.csproj.Up2Date
 D:\SalesPortal\UATCODE\MODEL\obj\Debug\Models.dll
 D:\SalesPortal\UATCODE\MODEL\obj\Debug\Models.pdb
+D:\Raju\AJT\Fulestackapplication_ajt\Modal\bin\Debug\Models.dll.config
+D:\Raju\AJT\Fulestackapplication_ajt\Modal\bin\Debug\Models.dll
+D:\Raju\AJT\Fulestackapplication_ajt\Modal\bin\Debug\Models.pdb
+D:\Raju\AJT\Fulestackapplication_ajt\Modal\bin\Debug\Newtonsoft.Json.dll
+D:\Raju\AJT\Fulestackapplication_ajt\Modal\bin\Debug\System.Memory.dll
+D:\Raju\AJT\Fulestackapplication_ajt\Modal\bin\Debug\System.Numerics.Vectors.dll
+D:\Raju\AJT\Fulestackapplication_ajt\Modal\bin\Debug\System.ValueTuple.dll
+D:\Raju\AJT\Fulestackapplication_ajt\Modal\obj\Debug\Model.csproj.AssemblyReference.cache
+D:\Raju\AJT\Fulestackapplication_ajt\Modal\obj\Debug\Model.csproj.CoreCompileInputs.cache
+D:\Raju\AJT\Fulestackapplication_ajt\Modal\obj\Debug\Model.csproj.Up2Date
+D:\Raju\AJT\Fulestackapplication_ajt\Modal\obj\Debug\Models.dll
+D:\Raju\AJT\Fulestackapplication_ajt\Modal\obj\Debug\Models.pdb

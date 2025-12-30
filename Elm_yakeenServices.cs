@@ -52,6 +52,7 @@ namespace Models
         public string nationalityDescAr { get; set; }
         public int Age { get; set; }
         public AbsherAddress Address { get; set; }
+        public int idref { get; set; }//changes start made by raju on 09-12-2025
 
     }
 
