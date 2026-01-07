@@ -47,3 +47,36 @@ C:\Users\spydy\Downloads\wetransfer_source-code-travel-pns_2024-06-25_1539\Model
 C:\Users\spydy\Downloads\wetransfer_source-code-travel-pns_2024-06-25_1539\Models\Models\Models\obj\Debug\Model.csproj.Up2Date
 C:\Users\spydy\Downloads\wetransfer_source-code-travel-pns_2024-06-25_1539\Models\Models\Models\obj\Debug\Models.dll
 C:\Users\spydy\Downloads\wetransfer_source-code-travel-pns_2024-06-25_1539\Models\Models\Models\obj\Debug\Models.pdb
+<<<<<<< HEAD
+D:\SalesPortal\UATCODE\MODEL\bin\Debug\Models.dll.config
+D:\SalesPortal\UATCODE\MODEL\bin\Debug\Models.dll
+D:\SalesPortal\UATCODE\MODEL\bin\Debug\Models.pdb
+D:\SalesPortal\UATCODE\MODEL\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+D:\SalesPortal\UATCODE\MODEL\bin\Debug\Newtonsoft.Json.dll
+D:\SalesPortal\UATCODE\MODEL\bin\Debug\System.Buffers.dll
+D:\SalesPortal\UATCODE\MODEL\bin\Debug\System.Memory.dll
+D:\SalesPortal\UATCODE\MODEL\bin\Debug\System.Numerics.Vectors.dll
+D:\SalesPortal\UATCODE\MODEL\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\SalesPortal\UATCODE\MODEL\bin\Debug\System.Text.Encodings.Web.dll
+D:\SalesPortal\UATCODE\MODEL\bin\Debug\System.Text.Json.dll
+D:\SalesPortal\UATCODE\MODEL\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\SalesPortal\UATCODE\MODEL\bin\Debug\System.ValueTuple.dll
+D:\SalesPortal\UATCODE\MODEL\obj\Debug\Model.csproj.AssemblyReference.cache
+D:\SalesPortal\UATCODE\MODEL\obj\Debug\Model.csproj.CoreCompileInputs.cache
+D:\SalesPortal\UATCODE\MODEL\obj\Debug\Model.csproj.Up2Date
+D:\SalesPortal\UATCODE\MODEL\obj\Debug\Models.dll
+D:\SalesPortal\UATCODE\MODEL\obj\Debug\Models.pdb
+D:\Raju\AJT\Fulestackapplication_ajt\Modal\bin\Debug\Models.dll.config
+D:\Raju\AJT\Fulestackapplication_ajt\Modal\bin\Debug\Models.dll
+D:\Raju\AJT\Fulestackapplication_ajt\Modal\bin\Debug\Models.pdb
+D:\Raju\AJT\Fulestackapplication_ajt\Modal\bin\Debug\Newtonsoft.Json.dll
+D:\Raju\AJT\Fulestackapplication_ajt\Modal\bin\Debug\System.Memory.dll
+D:\Raju\AJT\Fulestackapplication_ajt\Modal\bin\Debug\System.Numerics.Vectors.dll
+D:\Raju\AJT\Fulestackapplication_ajt\Modal\bin\Debug\System.ValueTuple.dll
+D:\Raju\AJT\Fulestackapplication_ajt\Modal\obj\Debug\Model.csproj.AssemblyReference.cache
+D:\Raju\AJT\Fulestackapplication_ajt\Modal\obj\Debug\Model.csproj.CoreCompileInputs.cache
+D:\Raju\AJT\Fulestackapplication_ajt\Modal\obj\Debug\Model.csproj.Up2Date
+D:\Raju\AJT\Fulestackapplication_ajt\Modal\obj\Debug\Models.dll
+D:\Raju\AJT\Fulestackapplication_ajt\Modal\obj\Debug\Models.pdb
+=======
+>>>>>>> 680edaead138b1e3b727fe4742117e632b96272e
