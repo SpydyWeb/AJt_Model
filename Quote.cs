@@ -1142,6 +1142,7 @@ namespace Models
         public decimal CollectionAmout { get; set; }
         public int NoOfRecurringDues { get; set; }
         public int commId { get; set; }
+        public string EnableRecurring { get; set; }
     }
     //changes start made by ankita on 24-10-2025
     public class RecuringResoponse
