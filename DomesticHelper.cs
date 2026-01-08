@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
@@ -552,6 +553,448 @@ namespace Models
             public string captured_amount { get; set; }
             public string authorized_amount { get; set; }
             public string status { get; set; }
+        }
+        #region pentaapi
+        public class PentaCreateQuotationReq
+        {
+            public string quotationNo { get; set; }
+            public string proposalNo { get; set; }
+            public string planCode { get; set; }
+            public string policyBranch { get; set; }
+            public string proposerType { get; set; }
+            public string proposerRelation { get; set; }
+            public string companyCode { get; set; }
+            public string branchCode { get; set; }
+            public string proposerIdenType { get; set; }
+            public string proposerIdenNo { get; set; }
+            public string crRegNumber { get; set; }
+            public string crRegType { get; set; }
+            public string businessType { get; set; }
+            public string businessTypeDesc { get; set; }
+            public string activityId { get; set; }
+            public string activityDescEN { get; set; }
+            public string activityDescAR { get; set; }
+            public string proposerName { get; set; }
+            public string proposerFirstName { get; set; }
+            public string proposerMiddleName { get; set; }
+            public string proposerLastName { get; set; }
+            public string proposerFourthName { get; set; }
+            public string proposerDob { get; set; }
+            public string proposerGender { get; set; }
+            public string proposerMaritalStatus { get; set; }
+            public string proposerOccupation { get; set; }
+            public string proposerNationality { get; set; }
+            public string idIssueDate { get; set; }
+            public string idExpiryDate { get; set; }
+            public string currency { get; set; }
+            public int policyTerm { get; set; }
+            public int premPayTerm { get; set; }
+            public string paymentFrequency { get; set; }
+            public object sumAssured { get; set; }
+            public string commencementDateOption { get; set; }
+            public string policyEffectiveDate { get; set; }
+            public string policyExpiryDate { get; set; }
+            public string backDatedFlag { get; set; }
+            public string backDatedReason { get; set; }
+            public string premPattern { get; set; }
+            public int escalatingPercentage { get; set; }
+            public string scPattern { get; set; }
+            public int indexRate { get; set; }
+            public string staffContract { get; set; }
+            public string staffGroup { get; set; }
+            public string staffCompany { get; set; }
+            public string staffBranch { get; set; }
+            public string employeeId { get; set; }
+            public string department { get; set; }
+            public string miIndicator { get; set; }
+            public string payerType { get; set; }
+            public string payerRelation { get; set; }
+            public string payerIdenType { get; set; }
+            public string payerIdenNo { get; set; }
+            public string payingInst { get; set; }
+            public string payingInstBranch { get; set; }
+            public string excessPaymentOption { get; set; }
+            public string paymentMethod { get; set; }
+            public string survivalPayType { get; set; }
+            public int loanInterestRate { get; set; }
+            public int growthRate { get; set; }
+            public string nationalityGroup { get; set; }
+            public string zoneCode { get; set; }
+            public string cashBeforeCover { get; set; }
+            public string individualFloat { get; set; }
+            public string familySize { get; set; }
+            public string tpaCompanyCode { get; set; }
+            public string tpaCompanyBranch { get; set; }
+            public string userId { get; set; }
+            public string sourceType { get; set; }
+            public string sourceOfBusiness { get; set; }
+            public object deductionDetail { get; set; }
+            public List<ProposerAddressDetail> proposerAddressDetails { get; set; }
+            public List<MemberDetail> memberDetails { get; set; }
+            public documentDetails[] documentDetails { get; set; }
+            public List<AgentDetail> agentDetails { get; set; }
+        }
+
+        public class ProposerAddressDetail
+        {
+            public string addressType { get; set; }
+            public int additionalNo { get; set; }
+            public int buildingNo { get; set; }
+            public string street { get; set; }
+            public string postCode { get; set; }
+            public string city { get; set; }
+            public string district { get; set; }
+            public string isPrimaryAddress { get; set; }
+        }
+
+        public class MemberDetail
+        {
+            public string memberName { get; set; }
+            public string memberFirstName { get; set; }
+            public string memberMiddleName { get; set; }
+            public string memberLastName { get; set; }
+            public string memberFourthName { get; set; }
+            public string memberGender { get; set; }
+            public string memberDOB { get; set; }
+            public string memberRel { get; set; }
+            public string memberIdenType { get; set; }
+            public string memberIdenNo { get; set; }
+            public string memberIdIssueDate { get; set; }
+            public string memberIdExpiryDate { get; set; }
+            public string effectiveDate { get; set; }
+            public string expiryDate { get; set; }
+            public string maritalStatus { get; set; }
+            public string occupation { get; set; }
+            public string nationality { get; set; }
+            public int subPlanCode { get; set; }
+            public string memberEffectiveDate { get; set; }
+            public string memberExpiryDate { get; set; }
+            public string city { get; set; }
+            public string sponsorNumber { get; set; }
+            public string consumeAlcohol { get; set; }
+            public int alcoholPerDay { get; set; }
+            public string pregnantFlag { get; set; }
+            public int pregnancyMonths { get; set; }
+            public string smokerFlag { get; set; }
+            public int noOfSticksPerDay { get; set; }
+            public string loadingType { get; set; }
+            public int loadingAmount { get; set; }
+            public string discountType { get; set; }
+            public int discountAmount { get; set; }
+            public List<MemberAddressDetail> memberAddressDetails { get; set; }
+            public uwQuestion[] uwQuestions { get; set; }
+        }
+
+        public class MemberAddressDetail
+        {
+            public string addressType { get; set; }
+            public int additionalNo { get; set; }
+            public int buildingNo { get; set; }
+            public string street { get; set; }
+            public string postCode { get; set; }
+            public string city { get; set; }
+            public string district { get; set; }
+            public string isPrimaryAddress { get; set; }
+        }
+
+        public class AgentDetail
+        {
+            public int agentNumber { get; set; }
+            public string rank { get; set; }
+            public int agentSharePercent { get; set; }
+            public string commissionType { get; set; }
+            public string commissionPercent { get; set; }
+        }
+
+        public class PentaCreateQuotationRes
+        {
+            public bool status { get; set; }
+            public ReturnValue returnValue { get; set; }
+            public object returnValues { get; set; }
+            public object errors { get; set; }
+        }
+
+        public class ReturnValue
+        {
+            public string quotationNo { get; set; }
+            public string referenceQuotationNo { get; set; }
+            public string policyStatus { get; set; }
+            public string policyStatusDesc { get; set; }
+            public string issueDate { get; set; }
+            public string expiryDate { get; set; }
+            public double grossPremium { get; set; }
+            public double vatAmount { get; set; }
+            public double netPremium { get; set; }
+            public double totalBilledAmount { get; set; }
+            public double commissionAmount { get; set; }
+            public List<ChargesBreakdown> chargesBreakdown { get; set; }
+            public List<MemberWiseDetail> memberWiseDetails { get; set; }
+        }
+
+        public class ChargesBreakdown
+        {
+            public string chargeCode { get; set; }
+            public string chargeDesc { get; set; }
+            public double amount { get; set; }
+        }
+
+        public class MemberWiseDetail
+        {
+            public string idenCode { get; set; }
+            public string idenNo { get; set; }
+            public string name { get; set; }
+            public double memeberTotalPremium { get; set; }
+            public List<object> uwRulesFailed { get; set; }
+            public PremiumDetails premiumDetails { get; set; }
+        }
+
+        public class PremiumDetails
+        {
+            public double grossPremium { get; set; }
+            public double discountAmount { get; set; }
+            public double loadingAmount { get; set; }
+            public double netPremium { get; set; }
+            public double vat { get; set; }
+            public double totalPremium { get; set; }
+        }
+
+        public class uwQuestion
+        {
+
+        }
+        public class documentDetails
+        {
+
+        }
+        #endregion
+        public class PentaTokenRequest
+        {
+            public string username { get; set; }
+            public string password { get; set; }
+        }
+        public class PentatokenResponse
+        {
+            public string status { get; set; }
+            public string access_token { get; set; }
+            public string refresh_token { get; set; }
+            public string message { get; set; }
+        }
+        public class CreateProposalRequest
+        {
+            public string quotationNo { get; set; }
+        }
+        public class CreateProposalResp
+        {
+            public bool Status { get; set; }
+            public ReturnValues ReturnValue { get; set; }
+            public object ReturnValues { get; set; }
+            public object Errors { get; set; }
+        }
+        public class ReturnValues
+        {
+            public string QuotationNo { get; set; }
+            public string ReferenceQuotationNo { get; set; }
+            public string PolicyNo { get; set; }
+            public string PolicyStatus { get; set; }
+            public string PolicyStatusDesc { get; set; }
+            public DateTime IssueDate { get; set; }
+            public DateTime ExpiryDate { get; set; }
+            public decimal GrossPremium { get; set; }
+            public decimal VatAmount { get; set; }
+            public decimal NetPremium { get; set; }
+            public decimal TotalBilledAmount { get; set; }
+            public decimal CommissionAmount { get; set; }
+            public List<object> ChargesBreakdown { get; set; }
+            public List<MemberWiseDetails> MemberWiseDetails { get; set; }
+        }
+        public class MemberWiseDetails
+        {
+            public string IdenCode { get; set; }
+            public string IdenNo { get; set; }
+            public string Name { get; set; }
+            public decimal MemeberTotalPremium { get; set; }
+            public List<object> UwRulesFailed { get; set; }
+            public PremiumDetail PremiumDetails { get; set; }
+        }
+
+        public class PremiumDetail
+        {
+            public decimal GrossPremium { get; set; }
+            public decimal DiscountAmount { get; set; }
+            public decimal LoadingAmount { get; set; }
+            public decimal NetPremium { get; set; }
+            public decimal Vat { get; set; }
+            public decimal TotalPremium { get; set; }
+        }
+        public class IssuePolicyRequest
+        {
+            public string policyNo { get; set; }
+            public ReceiptDetails receiptDetails { get; set; }
+        }
+
+        public class ReceiptDetails
+        {
+            public string proposalNo { get; set; }
+            public string instrumentType { get; set; }
+            public string instrumentBank { get; set; }
+            public string instrumentBankBranch { get; set; }
+            public string instrumentNo { get; set; }
+            public string creditCardType { get; set; }
+            public string creditCardNo { get; set; }
+            public string creditCardValidFrom { get; set; }
+            public string creditCardValidTo { get; set; }
+            public string receiptCode { get; set; }
+        }
+        public class IssuePolicyResponse
+        {
+            public bool Status { get; set; }
+            public ReceiptReturnValue ReturnValue { get; set; }
+            public object ReturnValues { get; set; }
+            public object Errors { get; set; }
+        }
+
+        public class ReceiptReturnValue
+        {
+            public string ReceiptNo { get; set; }
+            public decimal ReceiptAmount { get; set; }
+            public string PolicyStatus { get; set; }
+            public string Description { get; set; }
+        }
+        public class LookupResponse
+        {
+            public string Status { get; set; }
+            public string Message { get; set; }
+            public int ErrorCode { get; set; }
+            public string ErrorMessage { get; set; }
+            public LookupReturnValue ReturnValue { get; set; }
+            public object ReturnValues { get; set; }
+        }
+
+        public class LookupReturnValue
+        {
+            public int Offset { get; set; }
+            public bool HasMore { get; set; }
+            public int Limit { get; set; }
+            public int Count { get; set; }
+            public List<Link> Links { get; set; }
+            public List<Item> Items { get; set; }
+        }
+
+        public class Link
+        {
+            public string Rel { get; set; }
+            public string Href { get; set; }
+        }
+
+        public class Item
+        {
+            public List<LookupValue> Lookup_Values { get; set; }
+        }
+
+        public class LookupValue
+        {
+            public string V_Ins_Code { get; set; }
+            public string V_Desc { get; set; }
+        }
+        public class LookupTable
+        {
+            public InputValues inputValues { get; set; }
+        }
+        public class InputValues
+        {
+            public string procedureName { get; set; }
+            public string lookupCode { get; set; }
+        }
+
+        public class CalculateMembersReq
+        {
+            public List<MemberPremiumItem> memberPremium { get; set; }
+        }
+        public class MemberPremiumItem
+        {
+            public string memberIdenCode { get; set; }
+            public string memberIdenNo { get; set; }
+            public string planCode { get; set; }
+            public string parentPlriCode { get; set; }
+            public string eventCode { get; set; }
+            public string companyCode { get; set; }
+            public string gender { get; set; }
+            public string occupClass { get; set; }
+            public int age { get; set; }
+            public int term { get; set; }
+            public string effectiveDate { get; set; }
+            public string paymentFrequency { get; set; }
+            public string smoker { get; set; }
+            public string alcohol { get; set; }
+            public string pregnant { get; set; }
+            public string sumAssured { get; set; }
+            public string networkType { get; set; }
+            public string subPlanCode { get; set; }
+            public string maritalStatus { get; set; }
+            public string nationality { get; set; }
+            public string relation { get; set; }
+        }
+
+        public class PremiumResponse
+        {
+            public bool status { get; set; }
+            public string returnValue { get; set; }
+            public List<ReturnValueItem> returnValues { get; set; }
+            public List<errors> errors { get; set; }
+        }
+        public class errors
+        {
+            public string Field { get; set; }
+            public String Message { get; set; }
+            public int Code { get; set; }
+            public string Exception { get; set; }
+        }
+        public class ReturnValueItem
+        {
+            public string memberIdenCode { get; set; }
+            public string memberIdenNo { get; set; }
+            public double premiumRate { get; set; }
+            [JsonProperty("base")]
+            public double baseamount { get; set; }
+            public double premiumBase { get; set; }
+            public double premiumUSD { get; set; }
+        }
+
+        public class CalculatePremiumRequest
+        {
+            public int MemberquoteId { get; set; }
+            public string MemberIdnumber { get; set; }
+            public int ProposerquoteId { get; set; }
+            public string ProposerIdnumber { get; set; }
+            public string PolicyeffectiveDate { get; set; }
+            public string NationalityCode { get; set; }
+            public string DateOfBirth { get; set; }
+            public string Gender { get; set; }
+            public string Age { get; set; }
+            public string MaritalStatus { get; set; }
+
+
+        }
+        public class PentaQuoteRequest
+        {
+            public string memberNationalId { get; set; }
+            public string proposerNationalId { get; set; }
+            public int quoteId { get; set; }
+            public string NationalityCode { get; set; }
+            public string MaritalStatus { get; set; }
+        }
+        public class UpdatePaymentInfo
+        {
+            public int quoteId { get; set; }
+            public string status { get; set; }
+        }
+
+        public class GenerateReportResponse
+        {
+            public bool Status { get; set; }
+            public string FileName { get; set; }
+            public string FolderPath { get; set; }
+            public string Message { get; set; }
         }
     }
 }
