@@ -279,19 +279,6 @@ namespace Models
         public object Errordecription { get; set; }
     }
 
-    public class PentaTokenRequest
-    {
-        public string username { get; set; }
-        public string password { get; set; }
-    }
-    public class PentatokenResponse
-    {
-        public string status { get; set; }
-        public string access_token { get; set; }
-        public string refresh_token { get; set; }
-        public string message { get; set; }
-    }
-
     public class Savepentrequest
     {
         public long P_FLAG { get; set; }

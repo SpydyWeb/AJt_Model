@@ -709,12 +709,12 @@ namespace Models
         public class PentaCreateQuotationRes
         {
             public bool status { get; set; }
-            public ReturnValue returnValue { get; set; }
+            public ReturnValuedomestic returnValue { get; set; }
             public object returnValues { get; set; }
             public object errors { get; set; }
         }
 
-        public class ReturnValue
+        public class ReturnValuedomestic
         {
             public string quotationNo { get; set; }
             public string referenceQuotationNo { get; set; }
@@ -779,7 +779,7 @@ namespace Models
             public string refresh_token { get; set; }
             public string message { get; set; }
         }
-        public class CreateProposalRequest
+        public class CreateProposalRequestdomestic
         {
             public string quotationNo { get; set; }
         }
@@ -826,7 +826,7 @@ namespace Models
             public decimal Vat { get; set; }
             public decimal TotalPremium { get; set; }
         }
-        public class IssuePolicyRequest
+        public class IssuePolicyRequestdomestic
         {
             public string policyNo { get; set; }
             public ReceiptDetails receiptDetails { get; set; }
@@ -845,7 +845,7 @@ namespace Models
             public string creditCardValidTo { get; set; }
             public string receiptCode { get; set; }
         }
-        public class IssuePolicyResponse
+        public class IssuePolicyResponsedomestic
         {
             public bool Status { get; set; }
             public ReceiptReturnValue ReturnValue { get; set; }
@@ -860,7 +860,7 @@ namespace Models
             public string PolicyStatus { get; set; }
             public string Description { get; set; }
         }
-        public class LookupResponse
+        public class LookupResponsedomestic
         {
             public string Status { get; set; }
             public string Message { get; set; }
@@ -877,7 +877,7 @@ namespace Models
             public int Limit { get; set; }
             public int Count { get; set; }
             public List<Link> Links { get; set; }
-            public List<Item> Items { get; set; }
+            public List<Itemdomestic> Items { get; set; }
         }
 
         public class Link
@@ -886,7 +886,7 @@ namespace Models
             public string Href { get; set; }
         }
 
-        public class Item
+        public class Itemdomestic
         {
             public List<LookupValue> Lookup_Values { get; set; }
         }
@@ -896,11 +896,11 @@ namespace Models
             public string V_Ins_Code { get; set; }
             public string V_Desc { get; set; }
         }
-        public class LookupTable
+        public class LookupTabledomestic
         {
-            public InputValues inputValues { get; set; }
+            public InputValuesdomestic inputValues { get; set; }
         }
-        public class InputValues
+        public class InputValuesdomestic
         {
             public string procedureName { get; set; }
             public string lookupCode { get; set; }
