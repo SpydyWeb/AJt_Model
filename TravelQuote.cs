@@ -48,9 +48,9 @@ namespace Models
             public long CreatedById { get; set; }
 
         }
-    
 
-        public class AddressDetails
+
+        public class AddressDetailsTravel
         {
             public int Id { get; set; }
 
@@ -224,7 +224,7 @@ namespace Models
             public int PRODUCT_ID { get; set; }
         }
 
-        public class PremiumDetails
+        public class PremiumDetailsTravel
         {
             public int Id { get; set; }
 
@@ -525,7 +525,7 @@ namespace Models
             public string POLICY_CAT { get; set; }
             public string VAT { get; set; }
             public string IDNUMBER { get; set; }
-         
+
 
         }
         public class TravelBenefitPlan
@@ -569,7 +569,7 @@ namespace Models
             public Int64 sponsorID { get; set; }
             public string Source { get; set; }
         }
-   
+
 
         public class PersonIdInfo
         {
@@ -692,7 +692,7 @@ namespace Models
             public string Comments { get; set; }
             public string Referenceno { get; set; }
             public decimal Amount { get; set; }
-           
+
         }
         public class UtilityReq
         {
@@ -710,6 +710,52 @@ namespace Models
             public int Policyno { get; set; }
             public string BankNameEn { get; set; }
             public string BankNameAr { get; set; }
+        }
+        public class travalQuoteRequest
+        {
+            public int Id { get; set; }
+        }
+        public class PaymentResponse
+        {
+            public bool Status { get; set; }
+            public PaymentReturnValue ReturnValue { get; set; }
+            public object ReturnValues { get; set; }
+            public object Errors { get; set; }
+        }
+        public class PaymentReturnValue
+        {
+            public PremiumDetailsPenta PremiumDetails { get; set; }
+            public ReceiptDetailsPenta ReceiptDetails { get; set; }
+        }
+        public class PremiumDetailsPenta
+        {
+            public decimal BasicPremium { get; set; }
+            public decimal GrossPremium { get; set; }
+            public decimal Vat { get; set; }
+            public decimal DiscountAmount { get; set; }
+            public decimal LoadingAmount { get; set; }
+            public decimal TotalPremium { get; set; }
+            public decimal CommissionAmount { get; set; }
+            public decimal DeductibleAmount { get; set; }
+            public decimal OtherCharges { get; set; }
+            public decimal TotalBenefitPremium { get; set; }
+            public List<ChargesBreakdown> ChargesBreakdown { get; set; }
+        }
+        public class ChargesBreakdown
+        {
+            public string ChargeCode { get; set; }
+            public string ChargeDesc { get; set; }
+            public decimal Amount { get; set; }
+        }
+        public class ReceiptDetailsPenta
+        {
+            public string PolicyNo { get; set; }
+            public string ReceiptCode { get; set; }
+            public string InstrumentType { get; set; }
+            public string InstrumentNumber { get; set; }
+            public string SourceType { get; set; }
+            public int RenCount { get; set; }
+            public int EndCount { get; set; }
         }
     }
 }
