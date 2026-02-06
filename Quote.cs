@@ -226,6 +226,13 @@ namespace Models
         public string Text { get; set; }
         public string Value { get; set; }
     }
+
+    public class BirthCountryLU
+    {
+        public string NationalityCode { get; set; }
+        public int YakeenCode { get; set; }
+        public string Name { get; set; }
+    }
     public class BeneficiaryList
     {
         public string Name { get; set; }
