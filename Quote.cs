@@ -16,6 +16,7 @@ namespace Models
         public string CreatedBy { get; set; }
         public string Status { get; set; }
         public string ReferralBy { get; set; }
+        public string BranchCode { get; set; }
         public ClientDetails ClientDetail { get; set; }
     }
     public class PersonalInfo
@@ -880,6 +881,7 @@ namespace Models
         public string ReferralBy { get; set; }
         public string MerchantReference { get; set; }
         public string PaymentDate { get; set; }
+        public string BranchCode { get; set; }
     }
     public class UWReportPNS
     {
