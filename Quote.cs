@@ -144,8 +144,8 @@ namespace Models
 
         public string bankName { get; set; }
 
+        public string IBANNUMBER { get; set; }
         public string BANNumber { get; set; }
-
         public string bankcode { get; set; }
 
         public string branchName { get; set; }
@@ -1184,9 +1184,10 @@ namespace Models
         public string V_Status { get; set; }
         public string V_Created_By { get; set; }
     }
-    //Added by Shyam Patil 29Oct2025
+    //Added by Shyam Patil 13-Feb-2026
     public class GetQuote
     {
+        public string lang { get; set; } = "EN";
         public string QuoteNo { get; set; }
     }
 
@@ -1315,6 +1316,56 @@ namespace Models
         public string SumCovered { get; set; }
         public string AmountToBeTransferred { get; set; }
         public string SystemDate { get; set; }
+    }
+
+    public class QuoteResponseList
+    {
+        public bool IsError { get; set; } = true;
+        public string Message { get; set; }
+        public List<IllustrationQuote> quoteResponses { get; set; }
+    }
+    public class PolicyPayment
+    {
+        public string language { get; set; }
+        public string paymentkey { get; set; }
+        public string NationalId { get; set; } = string.Empty;
+    }
+    public class PolicyPaymentResponse
+    {
+        public bool IsError { get; set; }
+        public string Message { get; set; }
+
+        public int? PolicyId { get; set; }
+
+        public string quoteno { get; set; }
+        public string policynumber { get; set; }
+        public string PROD_NAME { get; set; }
+        public string PRODCODE { get; set; }
+        public string FULLNAME { get; set; }
+        public decimal? PREMIUM { get; set; }
+        public decimal? VAT { get; set; }
+        public decimal? TOTALPREMIUM { get; set; }
+        public string PAYMENTKEY { get; set; }
+        public int? SELECTTERM { get; set; }
+        public string IBAN { get; set; }
+        public string FREQUENCY { get; set; }
+        public string SUMCOVERED { get; set; }
+        public string CUSTOMERNAME { get; set; }
+        public bool? ISPAID { get; set; }
+        public DateTime? CREATEDON { get; set; }
+        public DateTime? ISSUEDATE { get; set; }
+        public DateTime? EXPIRYDATE { get; set; }
+        public string NATIONALID { get; set; }
+        public int? HEIGHT { get; set; }
+        public int? WEIGHT { get; set; }
+        public string EMAIL { get; set; }
+        public string MOBILENO { get; set; }
+        public string FREQUENCYNAME { get; set; }
+        public string STATUS { get; set; }
+        public string CREATEDBY { get; set; }
+        public string PROPOSALFILENAME { get; set; }
+        public string ILLUSTRATIONFILENAME { get; set; }
+
     }
 
 }

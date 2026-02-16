@@ -47,3 +47,15 @@ C:\Users\spydy\Downloads\wetransfer_source-code-travel-pns_2024-06-25_1539\Model
 C:\Users\spydy\Downloads\wetransfer_source-code-travel-pns_2024-06-25_1539\Models\Models\Models\obj\Debug\Model.csproj.Up2Date
 C:\Users\spydy\Downloads\wetransfer_source-code-travel-pns_2024-06-25_1539\Models\Models\Models\obj\Debug\Models.dll
 C:\Users\spydy\Downloads\wetransfer_source-code-travel-pns_2024-06-25_1539\Models\Models\Models\obj\Debug\Models.pdb
+D:\Shyam\AJT\Models\bin\Debug\Models.dll.config
+D:\Shyam\AJT\Models\bin\Debug\Models.dll
+D:\Shyam\AJT\Models\bin\Debug\Models.pdb
+D:\Shyam\AJT\Models\bin\Debug\Newtonsoft.Json.dll
+D:\Shyam\AJT\Models\bin\Debug\System.Memory.dll
+D:\Shyam\AJT\Models\bin\Debug\System.Numerics.Vectors.dll
+D:\Shyam\AJT\Models\bin\Debug\System.ValueTuple.dll
+D:\Shyam\AJT\Models\obj\Debug\Model.csproj.AssemblyReference.cache
+D:\Shyam\AJT\Models\obj\Debug\Model.csproj.CoreCompileInputs.cache
+D:\Shyam\AJT\Models\obj\Debug\Model.csproj.Up2Date
+D:\Shyam\AJT\Models\obj\Debug\Models.dll
+D:\Shyam\AJT\Models\obj\Debug\Models.pdb
