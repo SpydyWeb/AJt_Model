@@ -77,7 +77,7 @@ namespace Models
         public int sumInsured { get; set; }
         public string fuelType { get; set; }
         public string rateBasis { get; set; }
-        public int rate { get; set; }
+        public decimal rate { get; set; }
         public string srccApplicability { get; set; }
         public string tcApplicability { get; set; }
         public string bankCode { get; set; }
@@ -125,7 +125,7 @@ namespace Models
         public int amount { get; set; }
         public string rateBasisAmount { get; set; }
         public int rate { get; set; }
-        public int contributionAmount { get; set; }
+        public decimal contributionAmount { get; set; }
         public string calcBasis { get; set; }
     }
 
@@ -179,7 +179,7 @@ namespace Models
         public bool status { get; set; }
         public ReturnValue returnValue { get; set; }
         public object returnValues { get; set; }
-       // public object errors { get; set; }
+        // public object errors { get; set; }
         public List<Error> errors { get; set; }
     }
     public class Error
@@ -243,7 +243,7 @@ namespace Models
         public long Idnumber { get; set; }
         public int yakeenifo_id { get; set; }
         public string childrenbelow16 { get; set; }
-        public int mileagePerYear { get; set; }
+        public string mileagePerYear { get; set; }
         public int ncd { get; set; }
         public MotorPremiumDetail MotorPremiumDetail { get; set; }
         public long drvid { get; set; }
@@ -258,6 +258,18 @@ namespace Models
         public int age { get; set; }
         public string effectivedate { get; set; }
         public string sequenceno { get; set; }
+        public string roadconviction
+        {
+            get; set;
+        }
+        public string medicalCondition
+        {
+            get; set;
+        }
+        public string OCCUPATION_CODE
+        {
+            get; set;
+        }
     }
     public class MotorPremiumDetail
     {

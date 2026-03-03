@@ -494,7 +494,7 @@ namespace Models
         public decimal Amount { get; set; }
 
     }
-    [Serializable]
+    
     public class Results
     {
         public bool status { get; set; }

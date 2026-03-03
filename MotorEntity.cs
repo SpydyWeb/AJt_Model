@@ -47,6 +47,7 @@ namespace Models
             public DateTime EXPECTED_EFFECTIVE_DATE { get; set; }
             public decimal GROSS_PREMIUM { get; set; }
             public string CORE_SEGMENT_CODE { get; set; }
+            public string QuotationNo { get; set; }
             public string SEQUENCE_NO { get; set; }
             public string PAYMENT_KEY { get; set; }
             public string CUSTOM_NO { get; set; }
@@ -62,9 +63,12 @@ namespace Models
             public Int64 LOYALTYPLCID { get; set; }
             public int Customer_INFO_ID { get; set; }
             public string EDUCATION { get; set; }
-            public int MILEAGE_EXPECTED_YEAR { get; set; }
+            public string MILEAGE_EXPECTED_YEAR { get; set; }
             public int FcsCstId { get; set; }
             public int DOCUMENT_ID { get; set; }
+            public string OCCUPATION_CODE { get; set; }
+            public string OCCUPATION_NAME { get; set; }
+            public string EDUCATION_CODE { get; set; }
         }
         public class NCD_Info_req
         {
@@ -109,6 +113,41 @@ namespace Models
             //Changes end made by raju on 26-12-2025
 
         }
+        public class MotorPremiumRequest
+        {
+            public string productCode { get; set; }
+            public string makeCode { get; set; }
+            public string modelCode { get; set; }
 
+            public string coverType { get; set; }
+            public string repairType { get; set; }
+
+            public string nationality { get; set; }
+
+            public int driverAge { get; set; }
+            public string driverGender { get; set; }
+            public string maritalStatus { get; set; }
+
+            public int driverExperience { get; set; }
+            public string driverNationCode { get; set; }
+
+            public decimal siAmount { get; set; }
+
+            public string categoryCode { get; set; }
+
+            public int manufactureYear { get; set; }
+
+            public string registrationDate { get; set; }
+
+            public int ncdYear { get; set; }
+
+            public string registrationPlace { get; set; }
+
+            public string sourceType { get; set; }
+            public string transType { get; set; }
+
+            public decimal deductibleAmount { get; set; }
+        }
+        public class MotorPolicyEntity { public string QuotationNo { get; set; } }
     }
 }
