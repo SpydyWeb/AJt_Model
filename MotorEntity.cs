@@ -118,35 +118,29 @@ namespace Models
             public string productCode { get; set; }
             public string makeCode { get; set; }
             public string modelCode { get; set; }
-
             public string coverType { get; set; }
             public string repairType { get; set; }
-
             public string nationality { get; set; }
-
             public int driverAge { get; set; }
             public string driverGender { get; set; }
             public string maritalStatus { get; set; }
-
             public int driverExperience { get; set; }
             public string driverNationCode { get; set; }
-
             public decimal siAmount { get; set; }
-
             public string categoryCode { get; set; }
-
             public int manufactureYear { get; set; }
-
             public string registrationDate { get; set; }
-
             public int ncdYear { get; set; }
-
             public string registrationPlace { get; set; }
-
             public string sourceType { get; set; }
-            public string transType { get; set; }
-
             public decimal deductibleAmount { get; set; }
+            public string leasing { get; set; }
+            public decimal commissionPercentage { get; set; }
+            public string idenCode { get; set; }
+            public string idenNo { get; set; }
+            public string seqNo { get; set; }
+            public string effectiveFrom { get; set; }
+            public string expiryDate { get; set; }
         }
         public class MotorPolicyEntity { public string QuotationNo { get; set; } }
     }
