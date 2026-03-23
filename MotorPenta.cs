@@ -270,6 +270,8 @@ namespace Models
         {
             get; set;
         }
+        public decimal COMMISSION_AMOUNT { get; set; }
+        public int COMMISSION_RATE { get; set; }
     }
     public class MotorPremiumDetail
     {

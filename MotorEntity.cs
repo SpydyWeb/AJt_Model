@@ -69,6 +69,8 @@ namespace Models
             public string OCCUPATION_CODE { get; set; }
             public string OCCUPATION_NAME { get; set; }
             public string EDUCATION_CODE { get; set; }
+            public decimal COMMISSION_AMOUNT { get; set; }
+            public int COMMISSION_RATE { get; set; }
         }
         public class NCD_Info_req
         {
