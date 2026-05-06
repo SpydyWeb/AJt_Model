@@ -270,6 +270,8 @@ namespace Models
         {
             get; set;
         }
+
+        public string EDUCATION_CODE { get; set; }
         public decimal COMMISSION_AMOUNT { get; set; }
         public int COMMISSION_RATE { get; set; }
     }
@@ -361,6 +363,8 @@ namespace Models
         public string instrumentType { get; set; }
         public string instrumentNumber { get; set; }
         public string sourceType { get; set; }
+        public string ibanNumber { get; set; }
+        public string bankName { get; set; }
         public int renCount { get; set; }
         public int endCount { get; set; }
     }
